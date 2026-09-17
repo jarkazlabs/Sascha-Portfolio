@@ -1423,6 +1423,100 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans)}body:befor
     .section-title {
       font-size: clamp(40px, 4.9vw, 70px);
     }
+    .hero {
+      min-height: 84svh;
+      padding-top: 150px;
+      padding-bottom: 60px;
+      place-items: center;
+      justify-items: center;
+      text-align: center;
+    }
+    .hero .eyebrow {
+      max-width: 820px;
+      text-align: center;
+    }
+    .hero h1 {
+      max-width: 1000px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .hero-copy {
+      max-width: 760px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .hero-actions {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 26px 34px;
+    }
+    .section-index,
+    .section-title,
+    .section-intro,
+    .intro-copy,
+    .contact-side {
+      text-align: center;
+    }
+    .intro-grid,
+    .section-heading-row,
+    .process-grid,
+    .contact-grid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: clamp(30px, 4vw, 56px);
+    }
+    .intro-grid > *,
+    .section-heading-row > *,
+    .process-grid > *,
+    .contact-grid > * {
+      width: 100%;
+      max-width: 960px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .intro-grid .eyebrow {
+      width: 100%;
+      text-align: center;
+    }
+    .section-title {
+      max-width: 1080px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .section-intro,
+    .intro-grid .intro-copy {
+      max-width: 760px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .intro-copy ul {
+      display: inline-block;
+      text-align: left;
+    }
+    .project-filters,
+    .contact-actions {
+      justify-content: center;
+    }
+    .process-grid > div:first-child {
+      position: static;
+      top: auto;
+    }
+    .process-steps {
+      width: 100%;
+      max-width: 960px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: left;
+    }
+    .site-footer {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      text-align: center;
+    }
+    .site-footer p:last-child {
+      justify-self: center;
+      text-align: center;
+    }
     .statement p {
       font-size: clamp(40px, 5.9vw, 88px);
     }
@@ -1482,6 +1576,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans)}body:befor
       }
     }
     @media (max-width: 600px) {
+      .hero { min-height: auto; padding: 120px 0 46px; }
       .hero h1,
       .section-title { font-size: 37px; line-height: 0.98; }
       .statement p { font-size: 35px; }
@@ -1537,8 +1632,8 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans)}body:befor
         Ich verbinde langjährige Erfahrung in Gestaltung, Produktion und Marketing, mit den Möglichkeiten moderner KI, für klare Markenauftritte, konsistente Kommunikation und Kampagnen, die von der Idee bis zur Umsetzung funktionieren.
       </p>
       <div class="hero-actions reveal">
-        <a class="button button-primary" href="#profil">Mein Profil</a>
         <a class="button button-primary" href="lebenslauf/" target="_blank" rel="noopener noreferrer">Lebenslauf ansehen</a>
+        <a class="text-link" href="#profil">Mein Profil <span aria-hidden="true">↘</span></a>
         <a class="text-link" href="#felder">Was ich einbringen möchte <span aria-hidden="true">↘</span></a>
       </div>
       <p class="scroll-hint" aria-hidden="true">scroll / kennenlernen</p>
